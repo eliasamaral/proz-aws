@@ -7,10 +7,10 @@ def conte_caracter(frase):
     print(f"Número de caracteres: {caracteres}")
 
 while True:
-    frase = input("Digite uma frase: ")
-    opcao = input("Selecione uma opção: 1 - Contar palavras 2 - Contar caracteres 3 - Sair\n")
-
     try:
+        frase = input("Digite uma frase: ")
+        opcao = int(input("Selecione uma opção: 1 - Contar palavras 2 - Contar caracteres 3 - Sair\n"))
+
         if opcao == 1:
             conte_palavra(frase)
         elif opcao == 2:
